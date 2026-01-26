@@ -1,0 +1,33 @@
+{
+    // Python Configuration
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+
+    // File Associations
+    "files.associations": {
+        "*.md": "markdown"
+    },
+
+    // Markdown Settings
+    "markdown.preview.fontSize": 14,
+    "markdown.preview.lineHeight": 1.6,
+
+    // Editor Settings
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on",
+    "editor.rulers": [80, 120],
+
+    // Files to Exclude from Explorer
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true
+    },
+
+    // Search Exclusions
+    "search.exclude": {
+        "**/output": true,
+        "**/.venv": true,
+        "**/themes/Flex/.git": true
+    }
+}
