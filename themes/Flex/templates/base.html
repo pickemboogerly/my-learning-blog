@@ -91,6 +91,9 @@
   <link rel="stylesheet" type="text/css" href="{% if main_siteurl is defined %}{{ main_site }}{% else %}{{ SITEURL }}{% endif %}/{{ CUSTOM_CSS }}">
   {% endif %}
 
+  {# Boogerly Cyberpunk Custom CSS #}
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/custom.css">
+
   {% include "partial/icon.html" %}
 
   {% include "partial/color.html" %}

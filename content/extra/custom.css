@@ -1,0 +1,243 @@
+/*
+ * Boogerly Cyberpunk Theme
+ * Custom CSS based on the neon green slime logo
+ * Colors extracted from boogerly_cyberpunk.png
+ */
+
+:root {
+    /* Primary Colors - Neon Green from logo */
+    --neon-green: #0FFF50;
+    --neon-green-bright: #00FF41;
+    --neon-green-hover: #7FFF00;
+
+    /* Secondary Colors - Purple/Magenta from background */
+    --cyber-purple: #7B3BB5;
+    --cyber-purple-dark: #5A2A8F;
+    --cyber-magenta: #D946EF;
+
+    /* Background Colors - Dark cyberpunk theme */
+    --bg-dark: #0A0A0A;
+    --bg-purple-dark: #1A0D2E;
+    --bg-purple-medium: #2D1B3D;
+
+    /* Accent Colors */
+    --cyber-blue: #00D4FF;
+    --text-light: #E0E0E0;
+    --text-dim: #A0A0A0;
+}
+
+/* Override default link colors with neon green */
+a {
+    color: var(--neon-green) !important;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--neon-green-hover) !important;
+    text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Sidebar - Dark cyberpunk purple theme */
+aside {
+    background: linear-gradient(180deg, var(--bg-purple-dark) 0%, var(--bg-purple-medium) 100%) !important;
+    border-right: 2px solid var(--cyber-purple);
+}
+
+/* Sidebar text */
+aside,
+aside a {
+    color: var(--text-light) !important;
+}
+
+aside a:hover {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Site title in sidebar */
+aside div h1 {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+    font-weight: 700;
+}
+
+/* Subtitle */
+aside div p {
+    color: var(--cyber-magenta) !important;
+}
+
+/* Navigation links in sidebar */
+aside nav ul li a {
+    color: var(--text-light) !important;
+    transition: all 0.3s ease;
+}
+
+aside nav ul li a:hover {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Social icons - neon green with purple hover */
+ul.social a {
+    background-color: var(--cyber-purple) !important;
+    transition: all 0.3s ease;
+}
+
+ul.social a:hover {
+    background-color: var(--neon-green) !important;
+    box-shadow: 0 0 15px var(--neon-green);
+    transform: translateY(-4px) !important;
+}
+
+/* Main content area - dark theme */
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-light) !important;
+}
+
+/* Main navigation border */
+main nav {
+    border-bottom: 2px solid var(--cyber-purple) !important;
+}
+
+main nav a {
+    color: var(--neon-green) !important;
+    border-right: 1px solid var(--cyber-purple) !important;
+}
+
+main nav a:hover {
+    color: var(--neon-green-hover) !important;
+    text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Article headers */
+main article header h1,
+main article header h2 {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 5px var(--neon-green);
+}
+
+main article header p {
+    color: var(--cyber-magenta) !important;
+}
+
+/* Article content */
+main article {
+    color: var(--text-light) !important;
+}
+
+/* Headings in articles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--neon-green) !important;
+}
+
+h2 {
+    border-bottom: 2px solid var(--cyber-purple);
+    padding-bottom: 0.3em;
+}
+
+/* Code blocks - cyberpunk styling */
+main article pre {
+    background-color: var(--bg-purple-dark) !important;
+    border-left: 4px solid var(--neon-green) !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main article :not(pre) > code {
+    background-color: var(--bg-purple-medium) !important;
+    border: 1px solid var(--cyber-purple) !important;
+    color: var(--neon-green-bright) !important;
+}
+
+/* Blockquotes */
+main article blockquote {
+    background-color: var(--bg-purple-dark) !important;
+    border-left: 8px solid var(--cyber-magenta) !important;
+    color: var(--text-light) !important;
+}
+
+/* Buttons and tags */
+.tag-cloud a,
+a.btn {
+    background-color: var(--cyber-purple) !important;
+    color: var(--text-light) !important;
+    transition: all 0.3s ease;
+}
+
+.tag-cloud a:hover,
+a.btn:hover {
+    background-color: var(--neon-green) !important;
+    color: var(--bg-dark) !important;
+    box-shadow: 0 0 15px var(--neon-green);
+}
+
+/* Footer */
+main footer {
+    border-top: 2px solid var(--cyber-purple) !important;
+}
+
+main footer p {
+    color: var(--text-dim) !important;
+}
+
+/* Horizontal rules */
+hr {
+    background-color: var(--cyber-purple) !important;
+    height: 2px;
+}
+
+/* Tables */
+main article table td,
+main article table th {
+    border-top: 1px solid var(--cyber-purple) !important;
+    color: var(--text-light) !important;
+}
+
+/* Related posts */
+div.related-posts {
+    border-top: 2px solid var(--cyber-purple) !important;
+    border-bottom: 2px solid var(--cyber-purple) !important;
+}
+
+div.related-posts h4 {
+    color: var(--neon-green) !important;
+}
+
+/* Glow effect for important elements */
+.glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+    }
+    to {
+        text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+    }
+}
+
+/* Improve readability on dark background */
+main article p {
+    line-height: 1.8em;
+    color: var(--text-light);
+}
+
+/* Lists */
+main article ul li,
+main article ol li {
+    color: var(--text-light);
+}
+
+/* Selection color */
+::selection {
+    background-color: var(--neon-green);
+    color: var(--bg-dark);
+}
+
+::-moz-selection {
+    background-color: var(--neon-green);
+    color: var(--bg-dark);
+}

@@ -41,7 +41,7 @@ THEME = "themes/Flex"
 SITETITLE = SITENAME
 SITESUBTITLE = "Learning Python, AI & Code"
 SITEDESCRIPTION = "A blog documenting my journey learning Python and AI-assisted coding"
-SITELOGO = None  # Add path to your profile picture later (e.g., '/images/profile.jpg')
+SITELOGO = 'images/raw/boogerly_cyberpunk.png'  # Cyberpunk slime logo
 
 # Browser Tab Icon
 FAVICON = None  # Add path to favicon later (e.g., '/images/favicon.ico')
@@ -86,3 +86,10 @@ DISABLE_URL_HASH = False
 
 # Enable search (optional)
 # Requires installing stork-search or tipue_search plugin
+
+# Custom CSS - Cyberpunk theme based on logo
+STATIC_PATHS = ['images', 'extra']
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/custom.css'},
+}
+CUSTOM_CSS = 'static/custom.css'
