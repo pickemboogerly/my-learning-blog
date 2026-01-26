@@ -8,9 +8,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-# TODO: Update this with your Cloudflare Pages URL after deployment
-# Example: SITEURL = "https://boogerly.pages.dev"
-SITEURL = ""
+SITEURL = "https://my-learning-blog.pages.dev"
 RELATIVE_URLS = False
 
 # RSS/ATOM Feed Configuration
