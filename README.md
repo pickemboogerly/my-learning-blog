@@ -12,7 +12,7 @@ A blog documenting my journey learning Python and AI-assisted coding.
 
 - **Static Site Generator:** Pelican 4.11.0
 - **Theme:** [Flex](https://github.com/alexandrevicenzi/Flex)
-- **Language:** Python 3.14
+- **Language:** Python 3.13
 - **Hosting:** Cloudflare Pages
 - **Content Format:** Markdown
 
@@ -29,7 +29,7 @@ A blog documenting my journey learning Python and AI-assisted coding.
 
 ### Prerequisites
 
-- Python 3.14+
+- Python 3.13+
 - Git
 
 ### Setup

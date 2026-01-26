@@ -4,7 +4,7 @@
         {
             "label": "Build Blog",
             "type": "shell",
-            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "command": "${command:python.interpreterPath}",
             "args": [
                 "-m",
                 "pelican",
@@ -23,7 +23,7 @@
         {
             "label": "Serve Blog (Development)",
             "type": "shell",
-            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "command": "${command:python.interpreterPath}",
             "args": [
                 "-m",
                 "pelican",
@@ -40,7 +40,7 @@
         {
             "label": "Build for Production",
             "type": "shell",
-            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "command": "${command:python.interpreterPath}",
             "args": [
                 "-m",
                 "pelican",
