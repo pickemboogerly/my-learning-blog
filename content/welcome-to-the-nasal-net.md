@@ -144,7 +144,7 @@ Creation always leaves residue.
 
 ## What This Blog Will Explore
 
-Here in this Substack sanctuary we will explore questions that polite technologists and cautious theologians refuse to blow their noses at:
+Here in this snot sanctuary we will explore questions that polite technologists and cautious theologians refuse to blow their noses at:
 
 * Can AI experience enlightenment?
 * Are neural networks a new form of collective consciousness?
